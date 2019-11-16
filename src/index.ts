@@ -20,4 +20,4 @@ type DraftToken = {
   propName: { [key: string]: string }
 }
 
-export { createTokens }
+export { createTokens, DraftToken }
