@@ -1,6 +1,6 @@
 {
   "name": "styled-tokens",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Token system builder",
   "keywords": [],
   "main": "dist/styled-tokens.umd.js",
