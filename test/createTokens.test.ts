@@ -1,4 +1,4 @@
-import createTokens from '../src/index'
+import { createTokens } from '../src/index'
 
 describe('Tokens are created with success', () => {
   it('should work as basic', () => {

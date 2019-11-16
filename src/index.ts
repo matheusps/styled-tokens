@@ -1,4 +1,4 @@
-export default function createTokens(styles: DraftToken) {
+const createTokens = (styles: DraftToken) => {
   const { propName, values } = styles
   const props = Object.keys(propName)
 
@@ -15,7 +15,9 @@ export default function createTokens(styles: DraftToken) {
   return styleFunctions
 }
 
-export type DraftToken = {
+type DraftToken = {
   values: { [key: string]: any }
   propName: { [key: string]: string }
 }
+
+export { createTokens }
