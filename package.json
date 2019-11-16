@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "dist/styled-tokens.umd.js",
   "module": "dist/styled-tokens.es5.js",
-  "typings": "dist/types/styled-tokens.d.ts",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
