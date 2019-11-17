@@ -15,9 +15,26 @@ const createTokens = (styles: DraftToken) => {
   return styleFunctions
 }
 
+const createVariation = (draft: DraftVariation) => {
+  const { variation, name } = draft
+
+  const styledFunction = (name: string, variationValues: { [key: string]: any}) => (receivedProps: any) => {
+    const passedVariation = receivedProps[name]
+    const props = variationValues[passedVariation]
+    return props
+  }
+
+  return styledFunction(name, variation)
+}
+
 type DraftToken = {
   values: { [key: string]: any }
   propName: { [key: string]: string }
 }
 
-export { createTokens, DraftToken }
+type DraftVariation = {
+  variation: { [key: string]: any }
+  name: string
+}
+
+export { createTokens, DraftToken, createVariation }
